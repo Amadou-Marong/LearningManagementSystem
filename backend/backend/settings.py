@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'rest_framework.authtoken',
 ]
 
 MIDDLEWARE = [
@@ -78,10 +79,10 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 import dj_database_url
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.sqlite3',
+    #     'NAME': BASE_DIR / 'db.sqlite3',
+    # }
     # 'default': {
     #     'ENGINE': 'django.db.backends.mysql',
     #     'NAME': 'django_lms',
@@ -90,9 +91,29 @@ DATABASES = {
     #     'HOST': 'localhost',
     #     'PORT': '3306',
     # }
+    
+   'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'django_lms', 
+        'USER': 'postgres',
+        'PASSWORD': 'Amboy10',
+        'HOST': 'localhost', 
+        'PORT': '5432',
+    }
 }
 
 # DATABASES['default'] = dj_database_url.parse('mysql://root:@localhost:8080/django_lmse')
+
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.TokenAuthentication',
+    ],
+    # 'DEFAULT_PERMISSION_CLASSES': [
+    #     'rest_framework.permissions.IsAuthenticated',
+    # ],
+}
+
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
