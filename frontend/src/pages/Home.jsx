@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import logo from "../assets/react.svg";
 const Home = () => {
   return (
@@ -13,9 +14,9 @@ const Home = () => {
               </a>
               <div className="card-body">
                 <h5 className="card-title">Card title</h5>
-                <a href="#" className="btn btn-primary">
-                  Course Title
-                </a>
+                <Link to="/detail/1" className="btn btn-primary">
+                  Course Details
+                </Link>
               </div>
             </div>
           </div>
@@ -26,9 +27,9 @@ const Home = () => {
               </a>
               <div className="card-body">
                 <h5 className="card-title">Card title</h5>
-                <a href="#" className="btn btn-primary">
-                  Course Title
-                </a>
+                <Link to="/detail/2" className="btn btn-primary">
+                  Course Details
+                </Link>
               </div>
             </div>
           </div>
@@ -39,9 +40,9 @@ const Home = () => {
               </a>
               <div className="card-body">
                 <h5 className="card-title">Card title</h5>
-                <a href="#" className="btn btn-primary">
-                  Course Title
-                </a>
+                <Link to="/detail/3" className="btn btn-primary">
+                  Course Details
+                </Link>
               </div>
             </div>
           </div>
@@ -52,9 +53,9 @@ const Home = () => {
               </a>
               <div className="card-body">
                 <h5 className="card-title">Card title</h5>
-                <a href="#" className="btn btn-primary">
-                  Course Title
-                </a>
+                <Link to="/detail/4" className="btn btn-primary">
+                  Course Details
+                </Link>
               </div>
             </div>
           </div>

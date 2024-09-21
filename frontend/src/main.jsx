@@ -4,6 +4,7 @@ import App from './App.jsx'
 import './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css';  // Import Bootstrap CSS
 import 'bootstrap/dist/js/bootstrap.bundle.min';  // Import Bootstrap JS
+import 'bootstrap-icons/font/bootstrap-icons.css';  // Import Bootstrap Icons
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './pages/Home.jsx';
 import About from './pages/About.jsx';
@@ -27,7 +28,7 @@ const router = createBrowserRouter([
         errorElement: <div>404 Not Found</div>
       },
       {
-        path: 'detail/:id',
+        path: 'detail/:course_id',
         element: <CourseDetail />,
         errorElement: <div>404 Not Found</div>
       }
