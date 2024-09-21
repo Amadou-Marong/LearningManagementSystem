@@ -1,21 +1,12 @@
 import { Link } from "react-router-dom"
+import Sidebar from "../components/Sidebar"
 
 const Dashboard = () => {
   return (
     <div className="container mt-4">
         <div className="row">
             <aside className="col-md-3">
-                <div className="card">
-                    <div className="list-group list-group-flush">
-                        <h5 className="card-header">Dashboard</h5>
-                        <Link to='/' className="list-group-item list-list-group-item-action">My Courses</Link>
-                        <Link to='/' className="list-group-item list-list-group-item-action">Favorite Courses</Link>
-                        <Link to='/' className="list-group-item list-list-group-item-action">Recommended Courses</Link>
-                        <Link to='/' className="list-group-item list-list-group-item-action">Profile Settings</Link>
-                        <Link to='/' className="list-group-item list-list-group-item-action">Change Password</Link>
-                        <Link to='/' className="list-group-item list-list-group-item-action text-danger">Logout</Link>
-                    </div>
-                </div>
+                <Sidebar />
             </aside>
             <section className="col-md-9">
                 <div className="card">
