@@ -40,7 +40,7 @@ const Dashboard = () => {
                                 </td>
                                 </tr>
                             </tbody>
-                            </table>
+                        </table>
                     </div>
                 </div>
             </section>
