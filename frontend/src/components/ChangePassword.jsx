@@ -4,7 +4,7 @@ const ChangePassword = () => {
       <h5 className="card-header">Change Password</h5>
       <div className="card-body">
         <div className="mb-3 row">
-          <label className="col-sm-2 col-form-label">Password</label>
+          <label className="col-sm-2 col-form-label">New Password</label>
           <div className="col-sm-10">
             <input
               type="password"

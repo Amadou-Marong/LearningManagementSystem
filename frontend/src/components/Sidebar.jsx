@@ -11,7 +11,7 @@ const Sidebar = () => {
             <Link to='/dashboard/recommended-courses' className="list-group-item list-list-group-item-action">Recommended Courses</Link>
             <Link to='/dashboard/profile-settings' className="list-group-item list-list-group-item-action">Profile Settings</Link>
             <Link to='/dashboard/change-password' className="list-group-item list-list-group-item-action">Change Password</Link>
-            <Link to='/' className="list-group-item list-list-group-item-action text-danger">Logout</Link>
+            <Link to='/login' className="list-group-item list-list-group-item-action text-danger">Logout</Link>
         </div>
      </div>
   )
