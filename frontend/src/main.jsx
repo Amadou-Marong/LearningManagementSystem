@@ -15,6 +15,8 @@ import Login from './pages/Login.jsx';
 import Register from './pages/Register.jsx';
 import Dashboard from './pages/Dashboard.jsx';
 import MyCourses from './components/MyCourses.jsx';
+import Statistics from './components/Statistics.jsx';
+import FavoriteCourses from './components/FavoriteCourses.jsx';
 
 
 const router = createBrowserRouter([
@@ -53,7 +55,7 @@ const router = createBrowserRouter([
         children: [
           {
             index: true,
-            element: <div>Dashboard</div>,
+            element: <Statistics />,
             errorElement: <div>404 Not Found</div>
           },
           {
@@ -63,7 +65,7 @@ const router = createBrowserRouter([
           },
           {
             path: 'favorite-courses',
-            element: <div>Favorite Courses</div>,
+            element: <FavoriteCourses />,
             errorElement: <div>404 Not Found</div>
           },
         ]
