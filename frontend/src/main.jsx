@@ -11,6 +11,8 @@ import About from './pages/About.jsx';
 
 import Layout from './layout/Layout.jsx';
 import CourseDetail from './pages/CourseDetail.jsx';
+import Login from './pages/Login.jsx';
+import Register from './pages/Register.jsx';
 
 
 const router = createBrowserRouter([
@@ -30,6 +32,16 @@ const router = createBrowserRouter([
       {
         path: 'detail/:course_id',
         element: <CourseDetail />,
+        errorElement: <div>404 Not Found</div>
+      },
+      {
+        path: 'login',
+        element: <Login />,
+        errorElement: <div>404 Not Found</div>
+      },
+      {
+        path: 'register',
+        element: <Register />,
         errorElement: <div>404 Not Found</div>
       }
     ]
