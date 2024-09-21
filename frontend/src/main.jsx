@@ -19,6 +19,7 @@ import Statistics from './components/Statistics.jsx';
 import FavoriteCourses from './components/FavoriteCourses.jsx';
 import RecommendedCourses from './components/RecommendedCourses.jsx';
 import ProfileSettings from './components/ProfileSettings.jsx';
+import ChangePassword from './components/ChangePassword.jsx';
 
 
 const router = createBrowserRouter([
@@ -77,7 +78,12 @@ const router = createBrowserRouter([
           },
           {
             path: 'profile-settings',
-            element: <ProfileSettings/>,
+            element: <ProfileSettings />,
+            errorElement: <div>404 Not Found</div>
+          },
+          {
+            path: 'change-password',
+            element: <ChangePassword />,
             errorElement: <div>404 Not Found</div>
           },
         ]
