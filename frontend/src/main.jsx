@@ -9,6 +9,7 @@ import Home from './pages/Home.jsx';
 import About from './pages/About.jsx';
 
 import Layout from './layout/Layout.jsx';
+import CourseDetail from './pages/CourseDetail.jsx';
 
 
 const router = createBrowserRouter([
@@ -23,6 +24,11 @@ const router = createBrowserRouter([
       {
         path: 'about',
         element: <About />,
+        errorElement: <div>404 Not Found</div>
+      },
+      {
+        path: 'detail/:id',
+        element: <CourseDetail />,
         errorElement: <div>404 Not Found</div>
       }
     ]
