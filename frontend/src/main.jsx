@@ -13,6 +13,7 @@ import Layout from './layout/Layout.jsx';
 import CourseDetail from './pages/CourseDetail.jsx';
 import Login from './pages/Login.jsx';
 import Register from './pages/Register.jsx';
+import Dashboard from './pages/Dashboard.jsx';
 
 
 const router = createBrowserRouter([
@@ -43,7 +44,12 @@ const router = createBrowserRouter([
         path: 'register',
         element: <Register />,
         errorElement: <div>404 Not Found</div>
-      }
+      },
+      {
+        path: 'dashboard',
+        element: <Dashboard />,
+        errorElement: <div>404 Not Found</div>
+      },
     ]
   },
 ])
