@@ -78,6 +78,11 @@ const Navbar = () => {
                         </Link>
                       </li>
                       <li className="nav-item">
+                        <Link to="/dashboard" className="nav-link">
+                          Dashboard
+                        </Link>
+                      </li>
+                      <li className="nav-item">
                         <Link to="/" className="nav-link">
                           Logout
                         </Link>
