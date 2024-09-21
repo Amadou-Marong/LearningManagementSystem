@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg bg-dark " data-bs-theme="dark">
@@ -9,7 +11,7 @@ const Navbar = () => {
             <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul className="navbar-nav ms-auto">
                 <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">Home</a>
+                <Link to='/' className="nav-link active" aria-current="page">Home</Link>
                 </li>
                 <li className="nav-item">
                 <a className="nav-link" href="#">Courses</a>
@@ -18,7 +20,7 @@ const Navbar = () => {
                 <a className="nav-link" href="#">Teachers</a>
                 </li>
                 <li className="nav-item">
-                <a className="nav-link disabled" aria-disabled="true">Disabled</a>
+                  <Link to='/about' className="nav-link">About</Link>
                 </li>
             </ul>
         </div>

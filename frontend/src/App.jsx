@@ -1,13 +1,12 @@
 import Footer from "./components/Footer";
 import Navbar from "./components/navbar"
-import Home from "./pages/Home";
+import { Outlet } from "react-router-dom";
+import Layout from "./layout/Layout";
 
-function App() {
+const App = () => {
   return (
     <>
-      <Navbar />
-      <Home />
-      <Footer />
+      <Layout />
     </>
   );
 }
