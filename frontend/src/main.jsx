@@ -18,6 +18,7 @@ import MyCourses from './components/MyCourses.jsx';
 import Statistics from './components/Statistics.jsx';
 import FavoriteCourses from './components/FavoriteCourses.jsx';
 import RecommendedCourses from './components/RecommendedCourses.jsx';
+import ProfileSettings from './components/ProfileSettings.jsx';
 
 
 const router = createBrowserRouter([
@@ -72,6 +73,11 @@ const router = createBrowserRouter([
           {
             path: 'recommended-courses',
             element: <RecommendedCourses />,
+            errorElement: <div>404 Not Found</div>
+          },
+          {
+            path: 'profile-settings',
+            element: <ProfileSettings/>,
             errorElement: <div>404 Not Found</div>
           },
         ]

@@ -1,6 +1,6 @@
-import { Link, Outlet } from "react-router-dom"
+import { Outlet } from "react-router-dom"
 import Sidebar from "../components/Sidebar"
-import MyCourses from "../components/MyCourses"
+// import MyCourses from "../components/MyCourses"
 
 const Dashboard = () => {
   return (
