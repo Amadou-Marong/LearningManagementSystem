@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { Link, Outlet } from "react-router-dom"
 import Sidebar from "../components/Sidebar"
 import MyCourses from "../components/MyCourses"
 
@@ -10,7 +10,8 @@ const Dashboard = () => {
                 <Sidebar />
             </aside>
             <section className="col-md-9">
-                <MyCourses />
+                {/* <MyCourses /> */}
+                <Outlet />
             </section>
         </div>
     </div>

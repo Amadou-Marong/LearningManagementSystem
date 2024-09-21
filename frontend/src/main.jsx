@@ -14,6 +14,7 @@ import CourseDetail from './pages/CourseDetail.jsx';
 import Login from './pages/Login.jsx';
 import Register from './pages/Register.jsx';
 import Dashboard from './pages/Dashboard.jsx';
+import MyCourses from './components/MyCourses.jsx';
 
 
 const router = createBrowserRouter([
@@ -48,8 +49,26 @@ const router = createBrowserRouter([
       {
         path: 'dashboard',
         element: <Dashboard />,
-        errorElement: <div>404 Not Found</div>
+        errorElement: <div>404 Not Found</div>,
+        children: [
+          {
+            index: true,
+            element: <div>Dashboard</div>,
+            errorElement: <div>404 Not Found</div>
+          },
+          {
+            path: 'my-courses',
+            element: <MyCourses />,
+            errorElement: <div>404 Not Found</div>
+          },
+          {
+            path: 'favorite-courses',
+            element: <div>Favorite Courses</div>,
+            errorElement: <div>404 Not Found</div>
+          },
+        ]
       },
+      
     ]
   },
 ])
