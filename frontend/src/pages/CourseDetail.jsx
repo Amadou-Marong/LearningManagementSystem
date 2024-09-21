@@ -55,9 +55,24 @@ const CourseDetail = () => {
                 Course Videos
             </div>
             <ul className="list-group list-group-flush">
-                <li className="list-group-item">Introduction <button className="btn btn-primary float-end"><i className="bi bi-caret-right"></i></button></li>
-                <li className="list-group-item">Setup Project <button className="btn btn-primary float-end"><i className="bi bi-caret-right"></i></button></li>
-                <li className="list-group-item">Start with Functional Component <button className="btn btn-primary float-end"><i className="bi bi-caret-right"></i></button></li>
+                <li className="list-group-item">Introduction 
+                    <span className="float-end">
+                        <span className="mx-4">1 Hour 30 Minutes</span>
+                        <button className="btn btn-primary "><i className="bi bi-caret-right"></i></button>
+                    </span>
+                </li>
+                <li className="list-group-item">Setup Project 
+                    <span className="float-end">
+                        <span className="mx-4">1 Hour 30 Minutes</span>
+                        <button className="btn btn-primary "><i className="bi bi-caret-right"></i></button>
+                    </span>
+                </li>
+                <li className="list-group-item">Start with Functional Component 
+                    <span className="float-end">
+                        <span className="mx-4">1 Hour 30 Minutes</span>
+                        <button className="btn btn-primary "><i className="bi bi-caret-right"></i></button>
+                    </span>
+                </li>
             </ul>
         </div>
 
