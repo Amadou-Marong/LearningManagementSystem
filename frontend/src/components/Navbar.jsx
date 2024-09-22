@@ -53,6 +53,8 @@ const Navbar = () => {
               >
                 <span className="navbar-toggler-icon"></span>
               </button>
+
+              {/* User */}
               <div
                 className="collapse navbar-collapse"
                 id="navbarNavDarkDropdown"
@@ -65,6 +67,46 @@ const Navbar = () => {
                       aria-expanded="false"
                     >
                       User
+                    </button>
+                    <ul className="dropdown-menu dropdown-menu-dark">
+                      <li className="nav-item">
+                        <Link to="/login" className="nav-link">
+                          Login
+                        </Link>
+                      </li>
+                      <li className="nav-item">
+                        <Link to="/register" className="nav-link">
+                          Register
+                        </Link>
+                      </li>
+                      <li className="nav-item">
+                        <Link to="/dashboard" className="nav-link">
+                          Dashboard
+                        </Link>
+                      </li>
+                      <li className="nav-item">
+                        <Link to="/" className="nav-link">
+                          Logout
+                        </Link>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              
+              {/* Teacher */}
+              <div
+                className="collapse navbar-collapse"
+                id="navbarNavDarkDropdown"
+              >
+                <ul className="navbar-nav">
+                  <li className="nav-item dropdown">
+                    <button
+                      className="btn btn-dark dropdown-toggle"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Teacher
                     </button>
                     <ul className="dropdown-menu dropdown-menu-dark">
                       <li className="nav-item">
