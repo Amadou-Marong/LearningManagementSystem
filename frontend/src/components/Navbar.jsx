@@ -122,7 +122,7 @@ const Navbar = () => {
                     </button>
                     <ul className="dropdown-menu dropdown-menu-dark">
                       <li className="nav-item">
-                        <Link to="/login" className="nav-link">
+                        <Link to="/teacher-login" className="nav-link">
                           Login
                         </Link>
                       </li>

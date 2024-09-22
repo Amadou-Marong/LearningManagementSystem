@@ -14,6 +14,8 @@ import ProfileSettings from './components/user/ProfileSettings.jsx';
 import ChangePassword from './components/user/ChangePassword.jsx';
 import TeacherDashboard from './pages/TeacherDashboard.jsx';
 import { createBrowserRouter } from 'react-router-dom';
+import TeacherLogin from './pages/TeacherLogin.jsx';
+import AddCourse from './components/teacher/AddCourse.jsx';
 
 const router = createBrowserRouter([
   {
@@ -41,6 +43,16 @@ const router = createBrowserRouter([
       },
       {
         path: 'register',
+        element: <Register />,
+        errorElement: <div>404 Not Found</div>
+      },
+      {
+        path: 'teacher-login',
+        element: <TeacherLogin />,
+        errorElement: <div>404 Not Found</div>
+      },
+      {
+        path: 'teacher-register',
         element: <Register />,
         errorElement: <div>404 Not Found</div>
       },
@@ -97,8 +109,8 @@ const router = createBrowserRouter([
             errorElement: <div>404 Not Found</div>
           },
           {
-            path: 'favorite-courses',
-            element: <FavoriteCourses />,
+            path: 'add-course',
+            element: <AddCourse />,
             errorElement: <div>404 Not Found</div>
           },
           {
@@ -116,6 +128,7 @@ const router = createBrowserRouter([
             element: <ChangePassword />,
             errorElement: <div>404 Not Found</div>
           },
+          
         ]
       },
     ]
