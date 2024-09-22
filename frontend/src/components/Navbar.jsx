@@ -41,6 +41,7 @@ const Navbar = () => {
               </Link>
             </li>
 
+            {/* User */}
             <div className="container-fluid">
               <button
                 className="navbar-toggler"
@@ -53,8 +54,6 @@ const Navbar = () => {
               >
                 <span className="navbar-toggler-icon"></span>
               </button>
-
-              {/* User */}
               <div
                 className="collapse navbar-collapse"
                 id="navbarNavDarkDropdown"
@@ -93,8 +92,21 @@ const Navbar = () => {
                   </li>
                 </ul>
               </div>
-              
-              {/* Teacher */}
+            </div>
+            
+            {/* Teacher */}
+            <div className="container-fluid">
+              <button
+                className="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDarkDropdown"
+                aria-controls="navbarNavDarkDropdown"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span className="navbar-toggler-icon"></span>
+              </button>
               <div
                 className="collapse navbar-collapse"
                 id="navbarNavDarkDropdown"
@@ -120,7 +132,7 @@ const Navbar = () => {
                         </Link>
                       </li>
                       <li className="nav-item">
-                        <Link to="/dashboard" className="nav-link">
+                        <Link to="/teacher-dashboard" className="nav-link">
                           Dashboard
                         </Link>
                       </li>
