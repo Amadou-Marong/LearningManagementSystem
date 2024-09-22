@@ -16,6 +16,7 @@ import TeacherDashboard from './pages/TeacherDashboard.jsx';
 import { createBrowserRouter } from 'react-router-dom';
 import TeacherLogin from './pages/TeacherLogin.jsx';
 import AddCourse from './components/teacher/AddCourse.jsx';
+import MyUsers from './components/teacher/MyUsers.jsx';
 
 const router = createBrowserRouter([
   {
@@ -114,8 +115,8 @@ const router = createBrowserRouter([
             errorElement: <div>404 Not Found</div>
           },
           {
-            path: 'recommended-courses',
-            element: <RecommendedCourses />,
+            path: 'my-users',
+            element: <MyUsers />,
             errorElement: <div>404 Not Found</div>
           },
           {

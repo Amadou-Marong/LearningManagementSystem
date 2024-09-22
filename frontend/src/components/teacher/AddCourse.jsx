@@ -27,7 +27,6 @@ const AddCourse = () => {
             <div className="col-sm-10">
                 <textarea
                 className="form-control"
-                placeholder="interests"
                 />
                 <div id="emailHelp" className="form-text">Php, Python, Javascript, etc</div>
             </div>
