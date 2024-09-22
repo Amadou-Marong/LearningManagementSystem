@@ -14,12 +14,12 @@ import CourseDetail from './pages/CourseDetail.jsx';
 import Login from './pages/Login.jsx';
 import Register from './pages/Register.jsx';
 import Dashboard from './pages/Dashboard.jsx';
-import MyCourses from './components/MyCourses.jsx';
+import MyCourses from './components/user/MyCourses.jsx';
 import Statistics from './components/Statistics.jsx';
-import FavoriteCourses from './components/FavoriteCourses.jsx';
-import RecommendedCourses from './components/RecommendedCourses.jsx';
-import ProfileSettings from './components/ProfileSettings.jsx';
-import ChangePassword from './components/ChangePassword.jsx';
+import FavoriteCourses from './components/user/FavoriteCourses.jsx';
+import RecommendedCourses from './components/user/RecommendedCourses.jsx';
+import ProfileSettings from './components/user/ProfileSettings.jsx';
+import ChangePassword from './components/user/ChangePassword.jsx';
 
 
 const router = createBrowserRouter([
